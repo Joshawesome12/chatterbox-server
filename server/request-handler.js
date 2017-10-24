@@ -51,7 +51,7 @@ var requestHandler = function (request, response) {
     response.writeHead(201, headers);
 
     var body = "";
-    request.on('data', function(chunk) {
+    request.on('data', function (chunk) {
       body += chunk;
     });
     request.on('end', function () {
